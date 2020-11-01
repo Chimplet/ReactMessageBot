@@ -36,7 +36,6 @@ var blank0 = '<:blank0:772264180568948736>'; var blank1 = '<:blank1:772264279897
 client.on('ready', () => {
     
     console.log('loaded');
-    client.user.setPresence({ activity: ( name: '!reactmessage'), status: 'online' })
     client.user.setActivity('!reactmessage', { type: 'PLAYING'} )
     command(client, 'reactmessage', message => {
         reactMsg = message.content.slice(13);
