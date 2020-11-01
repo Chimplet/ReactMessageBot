@@ -102,10 +102,16 @@ client.on('ready', () => {
         if (charLenght > 20) {
             const embed = new Discord.MessageEmbed
             embed.setTitle("Error");
-            embed.setDescription("You have entered an invalid character, or exceeded the 20 reaction limit");
+            embed.setDescription("You have entered an invalid character, or exceeded the 20 reaction limit!");
             embed.setFooter("ReactMessageBot")
             embed.setColor('FF0000')
             message.channel.send(embed);
+        } else if (charLenght === 0) {
+            const embed = new Discord.MessageEmbed
+            embed.setTitle("Error");
+            embed.setDescription("You need to enter a valid message!");
+            embed.setFooter("ReactMessageBot")
+            embed.setColor('FF0000')
         } else {
             for (var i = 1; i < charLenght; i++) {
                 currentChar = reactChars[i] + "Num"
