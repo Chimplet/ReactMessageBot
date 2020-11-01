@@ -1,1 +1,1 @@
-worker: node pissMain.js
+Worker: node app.js

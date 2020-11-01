@@ -33,29 +33,6 @@ var blank0 = '<:blank0:772264180568948736>'; var blank1 = '<:blank1:772264279897
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('ready', () => {
     console.log('loaded')
     command(client, 'reactmessage', message => {
