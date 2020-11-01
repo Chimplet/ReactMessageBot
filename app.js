@@ -37,6 +37,7 @@ client.on('ready', () => {
     
     console.log('loaded');
     client.user.setPresence({ activity: ( name: '!reactmessage'), status: 'online' })
+    client.user.setActivity('!reactmessage', { type: 'PLAYING'} )
     command(client, 'reactmessage', message => {
         reactMsg = message.content.slice(13);
         charLenght = reactMsg.length;
