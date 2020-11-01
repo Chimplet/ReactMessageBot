@@ -112,21 +112,19 @@ client.on('ready', () => {
             embed.setDescription("You need to enter a valid message!");
             embed.setFooter("ReactMessageBot")
             embed.setColor('FF0000')
+            message.channel.send(embed);
         } else {
             for (var i = 1; i < charLenght; i++) {
                 currentChar = reactChars[i] + "Num"
-                console.log(currentChar);
                 if (numVars.includes(currentChar) === true) {
                     charPos = numVars.indexOf(currentChar) + 1;
                     reactCharPos = numVars.indexOf(currentChar);
                     reactCharName = numVars[reactCharPos].slice(0, 1) + numVars[charPos];
-                    console.log(reactCharName)
      
                     numVars[charPos]++; 
                     if (reactCharName === "a0" || "a1" || "a2" || "a3" || "a5" || "a5") {
                         if (reactCharName === "a0") {
                             message.react(a0)
-                            console.log('worked')
                         } else if (reactCharName === "a1") {
                             message.react(a1)
                         }else if (reactCharName === "a2") {
