@@ -34,7 +34,9 @@ var blank0 = '<:blank0:772264180568948736>'; var blank1 = '<:blank1:772264279897
 
 
 client.on('ready', () => {
-    console.log('loaded')
+    
+    console.log('loaded');
+    client.user.setPresence({ activity: ( name: '!reactmessage'), status: 'online' })
     command(client, 'reactmessage', message => {
         reactMsg = message.content.slice(13);
         charLenght = reactMsg.length;
