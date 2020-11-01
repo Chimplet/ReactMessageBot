@@ -99,7 +99,7 @@ client.on('ready', () => {
         ]
 
 
-        if (charLenght > 20) {
+        if (charLenght > 20 || numVars.includes(reactChars + "Num") === false) {
             const embed = new Discord.MessageEmbed
             embed.setTitle("Error");
             embed.setDescription("You have entered an invalid character, or exceeded the 20 reaction limit!");
