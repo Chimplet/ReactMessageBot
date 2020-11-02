@@ -31,8 +31,6 @@ var y0 = '🇾'; var y1 = '<:y1:772227014555729941>'; var y2 = '<:y2:77226019732
 var z0 = '🇿'; var z1 = '<:z1:772227014517850164>'; var z2 = '<:z2:772260197380521984>'; var z3 = '<:z3:772266535796211723>'; var z4 = '<:z4:772271724653051944>'; var z5 = '<:z5:772273129429925938>';
 var blank0 = '<:blank0:772264180568948736>'; var blank1 = '<:blank1:772264279897407508>'; var blank2 = '<:blank2:772264325154078730>'; var blank3 = '<:blank3:772264310542041110>'; var blank4 = '<:blank4:772264377155190784>'; var blank5 = '<:blank5:772264417000685579>';
 
-
-
 client.on('ready', () => {
     
     console.log('loaded');
@@ -115,7 +113,7 @@ client.on('ready', () => {
             message.channel.send(embed);
         } else {
             for (var i = 1; i < charLenght; i++) {
-                currentChar = reactChars[i] + "Num"
+                currentChar = reactChars[i].toLowerCase() + "Num"
                 if (numVars.includes(currentChar) === true) {
                     charPos = numVars.indexOf(currentChar) + 1;
                     reactCharPos = numVars.indexOf(currentChar);
@@ -537,3 +535,4 @@ client.on('ready', () => {
 
 
 client.login(process.env.TOKEN);
+// client.login("NjgyNzk3MTM1NjE5ODE3NDg4.XliOYg.r3cSv3k5mQeStDfO3E3jVJnmUmc");
