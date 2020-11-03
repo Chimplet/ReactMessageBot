@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json');
 const command = require('./commandHandle');
-const unicodeList = require('./content/unicode.json')
+
 charEmojis = {
     a0:  '🇦',  a1:  '<:a1:772227014052413441>',  a2:  '<:a2:772260197250498570>',  a3:  '<:a3:772266535880228896>',  a4:  '<:a4:772271724648857610>',  a5:  '<:a5:772273128931983402>',
     b0:  '🇧',  b1:  '<:b1:772227014425313280>',  b2:  '<:b2:772260197246304337>',  b3:  '<:b3:772266536076836914>',  b4:  '<:b4:772271724657246258>',  b5:  '<:b5:772273129325199371>',
