@@ -151,5 +151,5 @@ client.on('ready', () => {
 });
 
 
-// client.login(process.env.TOKEN);
-client.login("NjgyNzk3MTM1NjE5ODE3NDg4.XliOYg.r3cSv3k5mQeStDfO3E3jVJnmUmc");
+client.login(process.env.TOKEN);
+// client.login("NjgyNzk3MTM1NjE5ODE3NDg4.XliOYg.r3cSv3k5mQeStDfO3E3jVJnmUmc");
