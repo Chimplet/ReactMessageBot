@@ -122,14 +122,6 @@ client.on('ready', () => {
                     reactCharPos = numVars.indexOf(currentChar);
                     reactCharName = numVars[reactCharPos].slice(0, 1) + numVars[charPos];
                     message.react(charEmojis[reactCharName])
-                        
-                    /*
-                        .then (msg => {
-                            msg.delete();
-                        })
-                   
-                        .catch();
-                    */
                     numVars[charPos]++;
 
                 } else if (numVars.includes(currentChar) === false) {
@@ -152,4 +144,4 @@ client.on('ready', () => {
 
 
 client.login(process.env.TOKEN);
-// client.login("NjgyNzk3MTM1NjE5ODE3NDg4.XliOYg.r3cSv3k5mQeStDfO3E3jVJnmUmc");
+
